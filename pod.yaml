@@ -28,3 +28,4 @@ spec:
     - "--conf"
     - "spark.kubernetes.file.upload.path=/tmp/"
     - "local:///opt/spark/work-dir/app.jar"
+  restartPolicy: Never
