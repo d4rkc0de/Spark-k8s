@@ -1,11 +1,14 @@
+The used namespace is called ```d4rkc0de``` for the below commands.
+
 ### Build docker image ###
 ```console
 docker build -t docker-spark:0.0.0.1 .
 ```
 
-### Create service account ###
+### Create service account and give it the edit role on the cluster ###
 ```console
 kubectl create serviceaccount sa-spark
+kubectl create clusterrolebinding spark-role --clusterrole cluster-admin --serviceaccount=d4rkc0de:sa-spark --namespace=d4rkc0de
 ```
 
 ### Get master URL ###
