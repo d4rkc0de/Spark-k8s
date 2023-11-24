@@ -1,4 +1,4 @@
-Dockerfile and entrypoint.sh can be found here: https://github.com/apache/spark-docker
+Dockerfile and entrypoint.sh per spark version can be found here: https://github.com/apache/spark-docker
 
 The used namespace is called ```d4rkc0de``` for the below commands.
 
