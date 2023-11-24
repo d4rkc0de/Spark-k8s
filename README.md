@@ -1,5 +1,10 @@
 Dockerfile and entrypoint.sh per spark version can be found here: https://github.com/apache/spark-docker
 
+This project use spark v3.3.2, if a Dockerfile of another version is used, you should add this to your Dockerfile: 
+```console
+COPY app.jar /opt/spark/work-dir/
+```
+
 The used namespace is called ```d4rkc0de``` for the below commands.
 
 ### Build docker image ###
