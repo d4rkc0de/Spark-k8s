@@ -25,7 +25,5 @@ spec:
     - "spark.kubernetes.authenticate.driver.serviceAccountName=sa-spark"
     - "--conf"
     - "spark.kubernetes.namespace=d4rkc0de"
-    - "--conf"
-    - "spark.kubernetes.file.upload.path=/tmp/"
     - "local:///opt/spark/work-dir/app.jar"
   restartPolicy: Never
